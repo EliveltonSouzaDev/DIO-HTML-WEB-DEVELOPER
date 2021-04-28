@@ -1,4 +1,4 @@
-# Projetos do Bootcamp - HTML Web Developer da Digital Innovation one
+# Projetos do Bootcamp - HTML Web Developer da Digital Innovation One
 
 
 ## Recriando a página inicial do Instagram
