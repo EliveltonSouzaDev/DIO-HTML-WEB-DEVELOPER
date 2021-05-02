@@ -1,0 +1,117 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--preta);
+  font-family: helvetica, arial, sans-serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header .logo {
+  display: flex;
+  width: 10%;
+}
+
+header nav {
+  margin-right: 0.5em;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+/* filme principa */
+
+.filme-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../img/capa-breakingbad.jpg");
+  background-size: cover;
+  height: 600px;
+}
+
+.filme-principal .descricao {
+  width: 80%;
+}
+
+.titulo {
+  margin-top: 15%;
+  font-size: 50px;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  cursor: pointer;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  transition: 0.4s ease all;
+}
+.botoes {
+  margin-top: 5%;
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.botao i {
+  margin-right: 5px;
+}
+
+.container {
+  margin-left: 30px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+
+@media screen and (max-width: 700px) {
+  header .logo {
+    width: 30%;
+    margin: 10px;
+  }
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .botao {
+    margin-top: 5px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .descricao {
+    width: 50%;
+  }
+}
